@@ -277,14 +277,21 @@ body{background-attachment:scroll}
 <li><span class="label">Статус</span><span>Реестровый номер 50/6223<br><small style="color:var(--text-soft);font-weight:400">Адвокатская палата Московской области</small></span></li>
 </ul>
 </div>
-<form class="form" onsubmit="event.preventDefault(); alert('Спасибо! Я свяжусь с вами в течение рабочего дня.'); this.reset();">
-<h3>Оставить заявку</h3>
-<p>Все сообщения защищены адвокатской тайной.</p>
-<div class="field"><label>Ваше имя</label><input type="text" required></div>
-<div class="field"><label>Телефон или Telegram</label><input type="text" required></div>
-<div class="field"><label>Кратко о задаче</label><textarea rows="3"></textarea></div>
-<button type="submit" class="btn btn-primary">Отправить заявку →</button>
-<p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+<form class="form reveal" action="https://formsubmit.co/nataliiaoganezova@gmail.com" method="POST">
+  <h3>Оставить заявку</h3>
+  <p>Все сообщения защищены адвокатской тайной.</p>
+  
+  <!-- Скрытые поля для настройки -->
+  <input type="hidden" name="_subject" value="Новая заявка с сайта">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="text" name="_honey" style="display:none">
+  
+  <div class="field"><label>Ваше имя</label><input type="text" name="Имя" required></div>
+  <div class="field"><label>Телефон или Telegram</label><input type="text" name="Контакт" required></div>
+  <div class="field"><label>Кратко о задаче</label><textarea name="Задача" rows="3"></textarea></div>
+  <button type="submit" class="btn btn-primary">Отправить заявку →</button>
+  <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
 </form>
 </div>
 </div>
