@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Наталья Оганезова — адвокат для бизнеса | Москва</title>
+<meta name="description" content="Адвокат Наталья Оганезова. Абонентское сопровождение бизнеса, налоговые споры, банкротство, правовая помощь в Гонконге и Турции. Статус с 2009 года.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#FAFAF7;
+  --bg-soft:#F3F1EC;
+  --text:#1C1C1C;
+  --text-soft:#6B6B6B;
+  --accent:#9A7B5C;
+  --accent-dark:#7d6347;
+  --border:#E8E5DE;
+  --heading:'Fraunces', serif;
+  --body:'Inter', sans-serif;
+  --ease:cubic-bezier(0.22, 1, 0.36, 1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+
+body{
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.65;
+  color:var(--text);
+  background-color:var(--bg);
+  background-image:
+    linear-gradient(rgba(250,250,247,0.85), rgba(250,250,247,0.85)),
+    url('background.jpg');
+  background-size:cover;
+  background-position:center center;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+@supports (-webkit-overflow-scrolling:touch){
+  body{background-attachment:scroll}
+}
+
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+.section{padding:120px 0;position:relative}
+
+.section-soft{
+  background:rgba(243,241,236,0.90);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+.hero, .trust, .footer{
+  background:rgba(250,250,247,0.95);
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+}
+
+.eyebrow{font-family:var(--body);font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:20px;display:inline-block}
+h1,h2,h3{font-family:var(--heading);font-weight:500;letter-spacing:-0.015em;line-height:1.15;color:var(--text)}
+h1{font-size:clamp(38px, 5.5vw, 62px)}
+h2{font-size:clamp(32px, 4vw, 46px);margin-bottom:24px}
+h3{font-size:22px;margin-bottom:12px}
+.lead{font-size:18px;color:var(--text-soft);max-width:620px;line-height:1.7}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 32px;font-family:var(--body);font-size:14px;font-weight:500;letter-spacing:0.03em;border:none;cursor:pointer;transition:all .35s var(--ease);border-radius:2px}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 10px 30px rgba(154,123,92,0.25)}
+.btn-ghost{background:rgba(250,250,247,0.8);color:var(--text);border:1px solid var(--border)}
+.btn-ghost:hover{border-color:var(--text);background:var(--text);color:#fff}
+.btn .arrow{transition:transform .3s var(--ease)}
+.btn:hover .arrow{transform:translateX(4px)}
+
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,247,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.header.scrolled{border-color:var(--border)}
+.header__inner{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+.logo{font-family:var(--heading);font-size:22px;font-weight:500;letter-spacing:-0.01em}
+.logo span{color:var(--accent);font-style:italic}
+.nav{display:flex;gap:36px}
+.nav a{font-size:14px;color:var(--text-soft);transition:color .25s;position:relative}
+.nav a:hover{color:var(--text)}
+.nav a::after{content:'';position:absolute;left:0;bottom:-4px;width:0;height:1px;background:var(--accent);transition:width .3s var(--ease)}
+.nav a:hover::after{width:100%}
+.header__cta{font-size:14px;color:var(--text);font-weight:500;display:flex;align-items:center;gap:8px}
+.header__cta:hover{color:var(--accent)}
+.burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:8px}
+.burger span{width:24px;height:1.5px;background:var(--text);transition:all .3s}
+
+.hero{padding:180px 0 100px;position:relative}
+.hero__grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:center}
+.hero__tag{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;background:rgba(243,241,236,0.8);border:1px solid var(--border);border-radius:100px;font-size:13px;color:var(--text-soft);margin-bottom:32px;backdrop-filter:blur(4px)}
+.hero__tag .dot{width:6px;height:6px;background:var(--accent);border-radius:50%}
+.hero h1{margin-bottom:28px}
+.hero h1 em{font-style:italic;color:var(--accent);font-weight:400}
+.hero__lead{margin-bottom:40px}
+.hero__buttons{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:56px}
+
+.hero__photo{position:relative;aspect-ratio:4/5;overflow:hidden}
+.hero__photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+.trust{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:32px 0}
+.trust__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.trust__item{display:flex;align-items:center;gap:16px;font-size:14px;color:var(--text-soft)}
+.trust__item .num{font-family:var(--heading);font-size:28px;color:var(--accent);font-weight:500;line-height:1}
+.trust__item strong{display:block;color:var(--text);font-weight:500;margin-bottom:2px;font-size:15px}
+
+.about__grid{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center}
+.about__photo{position:relative;aspect-ratio:4/5;overflow:hidden}
+.about__photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+.about__text p{color:var(--text-soft);margin-bottom:18px;font-size:16px}
+.about__features{list-style:none;margin-top:36px;display:grid;gap:0}
+.about__features li{display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--border)}
+.about__features li:last-child{border-bottom:1px solid var(--border)}
+.about__features .ico{width:40px;height:40px;flex-shrink:0;display:flex;align-items:center;justify-content:center;color:var(--accent);font-size:20px}
+.about__features strong{display:block;color:var(--text);font-weight:500;margin-bottom:4px}
+.about__features span{color:var(--text-soft);font-size:14px}
+
+.services__head{text-align:center;margin-bottom:72px}
+.services__head .lead{margin:0 auto}
+.services__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border)}
+.service{background:rgba(250,250,247,0.92);padding:48px 40px;transition:background .35s var(--ease);position:relative;cursor:pointer;backdrop-filter:blur(2px)}
+.service:hover{background:rgba(243,241,236,0.95)}
+.service__num{font-family:var(--heading);font-size:14px;color:var(--accent);margin-bottom:24px;display:block;font-style:italic}
+.service h3{font-size:24px;margin-bottom:14px}
+.service p{color:var(--text-soft);font-size:15px;margin-bottom:20px}
+.service__for{font-size:13px;color:var(--text-soft);font-style:italic;padding-top:16px;border-top:1px solid var(--border)}
+.service__for strong{color:var(--text);font-weight:500;font-style:normal}
+
+.process__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-top:72px}
+.step{position:relative}
+.step__num{font-family:var(--heading);font-size:56px;color:var(--accent);font-weight:400;line-height:1;margin-bottom:20px;font-style:italic;opacity:0.8}
+.step h3{font-size:19px;margin-bottom:10px}
+.step p{color:var(--text-soft);font-size:14px;line-height:1.6}
+
+.faq__wrap{max-width:820px;margin:0 auto}
+.faq__head{text-align:center;margin-bottom:64px}
+.faq__head .lead{margin:0 auto}
+.faq-item{border-top:1px solid var(--border)}
+.faq-item:last-child{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;background:none;border:none;padding:28px 0;display:flex;justify-content:space-between;align-items:center;gap:24px;cursor:pointer;text-align:left;font-family:var(--heading);font-size:20px;font-weight:500;color:var(--text);transition:color .25s}
+.faq-q:hover{color:var(--accent)}
+.faq-icon{width:28px;height:28px;flex-shrink:0;position:relative}
+.faq-icon::before,.faq-icon::after{content:'';position:absolute;top:50%;left:50%;background:var(--accent);transition:transform .35s var(--ease)}
+.faq-icon::before{width:16px;height:1px;transform:translate(-50%,-50%)}
+.faq-icon::after{width:1px;height:16px;transform:translate(-50%,-50%)}
+.faq-item.open .faq-icon::after{transform:translate(-50%,-50%) rotate(90deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.faq-a__inner{padding:0 0 28px;color:var(--text-soft);font-size:15px;line-height:1.7;max-width:90%}
+
+.contact__grid{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:start}
+.contact__info h2{margin-bottom:20px}
+.contact__info .lead{margin-bottom:40px}
+.contact__list{list-style:none}
+.contact__list li{display:flex;gap:18px;padding:20px 0;border-top:1px solid var(--border)}
+.contact__list li:last-child{border-bottom:1px solid var(--border)}
+.contact__list .label{font-size:12px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px;font-weight:500}
+.contact__list a,.contact__list span{color:var(--text);font-size:16px;font-weight:500}
+.contact__list a:hover{color:var(--accent)}
+
+.form{background:rgba(243,241,236,0.92);padding:48px;border:1px solid var(--border);backdrop-filter:blur(4px)}
+.form h3{font-size:26px;margin-bottom:10px}
+.form > p{color:var(--text-soft);margin-bottom:32px;font-size:15px}
+.field{margin-bottom:20px}
+.field label{display:block;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-soft);margin-bottom:8px;font-weight:500}
+.field input,.field textarea{width:100%;padding:14px 0;border:none;border-bottom:1px solid var(--border);background:transparent;font-family:var(--body);font-size:15px;color:var(--text);transition:border-color .25s;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent)}
+.field textarea{min-height:80px}
+.form .btn{width:100%;justify-content:center;margin-top:12px}
+.form__note{font-size:12px;color:var(--text-soft);text-align:center;margin-top:20px;line-height:1.6}
+
+.footer{background:rgba(28,28,28,0.97);color:rgba(255,255,255,0.7);padding:64px 0 32px;backdrop-filter:blur(4px)}
+.footer__grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:48px}
+.footer__logo{font-family:var(--heading);font-size:24px;color:#fff;margin-bottom:16px}
+.footer__logo span{color:var(--accent);font-style:italic}
+.footer p{font-size:14px;line-height:1.7;max-width:380px}
+.footer h4{color:#fff;font-family:var(--body);font-size:13px;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:20px;font-weight:500}
+.footer ul{list-style:none;display:grid;gap:10px}
+.footer ul a{font-size:14px;transition:color .25s}
+.footer ul a:hover{color:var(--accent)}
+.footer__bottom{padding-top:32px;border-top:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:12px}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease), transform .9s var(--ease)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media (max-width: 960px){
+  body{background-attachment:scroll}
+  .section{padding:80px 0}
+  .hero{padding:140px 0 60px}
+  .hero__grid,.about__grid,.contact__grid{grid-template-columns:1fr;gap:48px}
+  .hero__photo,.about__photo{max-width:380px;margin:0 auto}
+  .hero__photo{order:-1}
+  .trust__grid{grid-template-columns:1fr;gap:20px}
+  .services__grid{grid-template-columns:1fr}
+  .process__grid{grid-template-columns:repeat(2,1fr);gap:32px}
+  .footer__grid{grid-template-columns:1fr;gap:40px}
+  .nav{position:fixed;top:68px;left:0;right:0;background:rgba(250,250,247,0.98);backdrop-filter:blur(12px);flex-direction:column;padding:32px 24px;gap:20px;border-bottom:1px solid var(--border);transform:translateY(-120%);transition:transform .35s var(--ease)}
+  .nav.open{transform:translateY(0)}
+  .burger{display:flex}
+  .burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .burger.open span:nth-child(2){opacity:0}
+  .burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .header__cta{display:none}
+  .form{padding:32px 24px}
+}
+@media (max-width: 520px){
+  .process__grid{grid-template-columns:1fr}
+  .hero__buttons{flex-direction:column;width:100%}
+  .hero__buttons .btn{width:100%;justify-content:center}
+  .footer__bottom{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#" class="logo">Наталья <span>Оганезова</span></a>
+    <nav class="nav" id="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#services">Услуги</a>
+      <a href="#process">Как работаю</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <a href="#contact" class="header__cta">Записаться →</a>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div class="reveal">
+        <div class="hero__tag"><span class="dot"></span> Адвокатская практика · Москва</div>
+        <h1>Адвокат для бизнеса. <em>В России — и за её пределами.</em></h1>
+        <p class="lead hero__lead">Правовая защита предпринимателей: налоговые споры, сопровождение сделок, работа с юрисдикциями Гонконга и Турции. Конфиденциально. Точечно. На результат.</p>
+        <div class="hero__buttons">
+          <a href="#contact" class="btn btn-primary">Записаться на консультацию <span class="arrow">→</span></a>
+          <a href="#services" class="btn btn-ghost">Направления работы</a>
+        </div>
+      </div>
+      <div class="hero__photo reveal">
+        <img src="photo.jpg" alt="Адвокат Наталья Оганезова">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" style="padding:32px 0">
+  <div class="container">
+    <div class="trust__grid">
+      <div class="trust__item">
+        <div class="num">25+</div>
+        <div><strong>лет адвокатской практики</strong>Статус с 2009 года</div>
+      </div>
+      <div class="trust__item">
+        <div class="num">50/6223</div>
+        <div><strong>реестровый номер</strong>Адвокатская палата Московской области</div>
+      </div>
+      <div class="trust__item">
+        <div class="num">3</div>
+        <div><strong>юрисдикции</strong>Россия · Гонконг · Турция</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__photo reveal">
+        <img src="photo.jpg" alt="Наталья Оганезова">
+      </div>
+      <div class="reveal">
+        <span class="eyebrow">Обо мне</span>
+        <h2>Наталья Оганезова</h2>
+        <p class="lead" style="margin-bottom:28px">Адвокат. 25 лет защиты бизнеса и частных клиентов.</p>
+        <div class="about__text">
+          <p>Я помогаю предпринимателям принимать решения, не оглядываясь на правовые риски. За 25 лет практики я прошла путь от судебных заседаний в России до сопровождения сделок с участием компаний из Гонконга и Турции.</p>
+          <p>Моя специализация — там, где другие чувствуют себя неуверенно: налоговые проверки, вопросы «дробления бизнеса», банкротство, международные структуры. Я не даю обещаний, которые не могу выполнить. Но если берусь за дело — веду его лично, до результата.</p>
+          <p>Каждую консультацию я начинаю с честной оценки перспектив. Если вашу задачу можно решить без суда — я скажу об этом первой.</p>
+        </div>
+        <ul class="about__features">
+          <li><div class="ico">⚖</div><div><strong>Адвокатский статус с 2009 года</strong><span>Реестровый номер 50/6223, Адвокатская палата Московской области</span></div></li>
+          <li><div class="ico">🌐</div><div><strong>Международная практика</strong><span>Россия, Гонконг, Турция — сопровождение сделок и структурирование бизнеса</span></div></li>
+          <li><div class="ico">🔒</div><div><strong>Адвокатская тайна</strong><span>Всё, что вы рассказываете, защищено законом. Полная конфиденциальность</span></div></li>
+          <li><div class="ico">✦</div><div><strong>Личное ведение дел</strong><span>Не передаю дела помощникам — каждое веду сама, от первой встречи до результата</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="services">
+  <div class="container">
+    <div class="services__head reveal">
+      <span class="eyebrow">Направления работы</span>
+      <h2>Четыре специализации,<br>в которых я уверена</h2>
+      <p class="lead">Я не берусь за «всё подряд». Работаю только там, где могу гарантировать экспертизу высокого уровня.</p>
+    </div>
+    <div class="services__grid reveal">
+      <div class="service">
+        <span class="service__num">01</span>
+        <h3>Абонентское сопровождение бизнеса</h3>
+        <p>Постоянная правовая поддержка вашей компании. Договоры, корпоративные споры, проверки, переговоры — один адвокат, который знает ваш бизнес изнутри.</p>
+        <div class="service__for"><strong>Для кого:</strong> собственники бизнеса, CFO, генеральные директора</div>
+      </div>
+      <div class="service">
+        <span class="service__num">02</span>
+        <h3>Правовая помощь в Гонконге и Турции</h3>
+        <p>Сопровождение сделок, открытие и структурирование бизнеса, работа с иностранными контрагентами. Понимаю специфику обеих юрисдикций и помогаю избежать фатальных ошибок на старте.</p>
+        <div class="service__for"><strong>Для кого:</strong> предприниматели с ВЭД, релоканты, инвесторы</div>
+      </div>
+      <div class="service">
+        <span class="service__num">03</span>
+        <h3>Налоговые консультации и защита при проверках</h3>
+        <p>Разбираюсь в самых сложных вопросах: «дробление бизнеса», необоснованная налоговая выгода, трансфертное ценообразование. Готовлю позицию до проверки — а не после неё.</p>
+        <div class="service__for"><strong>Для кого:</strong> бизнес на ОСНО и УСН, группы компаний</div>
+      </div>
+      <div class="service">
+        <span class="service__num">04</span>
+        <h3>Сопровождение банкротства</h3>
+        <p>Защита интересов должника, кредитора или руководителя. Субсидиарная ответственность, вывод активов, работа с контролирующими лицами.</p>
+        <div class="service__for"><strong>Для кого:</strong> собственники бизнеса, топ-менеджеры, кредиторы</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="process">
+  <div class="container">
+    <div class="reveal" style="max-width:640px">
+      <span class="eyebrow">Как мы работаем</span>
+      <h2>Четыре шага<br>от первого звонка до результата</h2>
+      <p class="lead">Прозрачный процесс без сюрпризов. Вы всегда знаете, на каком этапе находится ваше дело.</p>
+    </div>
+    <div class="process__grid">
+      <div class="step reveal"><div class="step__num">01</div><h3>Первичная консультация</h3><p>Короткий звонок или встреча. Вы описываете ситуацию — я честно говорю, чем могу помочь и какие есть риски. Бесплатно, 20–30 минут.</p></div>
+      <div class="step reveal"><div class="step__num">02</div><h3>Правовой анализ</h3><p>Изучаю документы, готовлю письменную позицию или стратегию. Вы получаете не «общие слова», а план действий со сроками и стоимостью.</p></div>
+      <div class="step reveal"><div class="step__num">03</div><h3>Работа по делу</h3><p>Веду дело лично: переговоры, суды, переписка с госорганами. Вы получаете отчёты на каждом этапе — без «адвокат занят, перезвоним».</p></div>
+      <div class="step reveal"><div class="step__num">04</div><h3>Результат</h3><p>Доводим дело до логического завершения. При необходимости — сопровождаю исполнение решения и дальнейшую защиту.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft" id="faq">
+  <div class="container">
+    <div class="faq__wrap">
+      <div class="faq__head reveal">
+        <span class="eyebrow">Частые вопросы</span>
+        <h2>То, о чём спрашивают<br>перед первым звонком</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q">Вы гарантируете конфиденциальность?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a__inner">Абсолютную. Всё, что вы мне рассказываете, покрыто адвокатской тайной (ст. 8 ФЗ «Об адвокатской деятельности и адвокатуре в РФ»). Я не имею права разглашать эти сведения — ни государственным органам, ни третьим лицам, ни даже по решению суда. Это не обещание — это закон, за нарушение которого я лишаюсь статуса.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Сколько стоит консультация и дальнейшая работа?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a__inner">Первичная консультация (20–30 минут) — бесплатна и ни к чему не обязывает. Стоимость дальнейшей работы обсуждается индивидуально и зависит от сложности задачи. Я всегда называю фиксированную цену «под ключ» или понятную почасовую ставку — до начала работы, в письменном виде. Никаких «сюрпризов» в счёте.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Можно ли работать удалённо, если я не в Москве?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a__inner">Да, и это обычная практика. Более 60% моих клиентов — из других городов и стран. Работаю через защищённые каналы связи, электронный документооборот, видеосвязь. Для судов — представляю интересы по доверенности без вашего личного присутствия.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Что делать, если ко мне уже пришла налоговая проверка?<span class="faq-icon"></span></button>
+          <div class="faq-a"><div class="faq-a__inner">Не подписывать ничего без адвоката. Первое, что нужно сделать — позвонить мне. Даже на стадии «они просто позвонили и попросили документы» можно допустить ошибки, которые потом обойдутся в миллионы. Я подключусь в тот же день.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact__grid">
+      <div class="contact__info reveal">
+        <span class="eyebrow">Связаться</span>
+        <h2>Расскажите о вашей задаче</h2>
+        <p class="lead">Оставьте заявку — я свяжусь с вами в течение рабочего дня. Первичная консультация бесплатна и ни к чему не обязывает.</p>
+        <ul class="contact__list">
+          <li>
+            <div style="flex:1">
+              <span class="label">Телефон</span>
+              <a href="tel:+79262722604">+7 926 272-26-04</a>
+            </div>
+          </li>
+          <li>
+            <div style="flex:1">
+              <span class="label">Email</span>
+              <a href="mailto:nataliiaoganezova@gmail.com">nataliiaoganezova@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <div style="flex:1">
+              <span class="label">Статус</span>
+              <span>Реестровый номер 50/6223<br><small style="color:var(--text-soft);font-weight:400">Адвокатская палата Московской области</small></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <form class="form reveal" onsubmit="event.preventDefault(); alert('Спасибо! Я свяжусь с вами в течение рабочего дня.'); this.reset();">
+        <h3>Оставить заявку</h3>
+        <p>Все сообщения защищены адвокатской тайной.</p>
+        <div class="field"><label for="name">Ваше имя</label><input type="text" id="name" required></div>
+        <div class="field"><label for="contact">Телефон или Telegram</label><input type="text" id="contact" required></div>
+        <div class="field"><label for="msg">Кратко о задаче</label><textarea id="msg" rows="3"></textarea></div>
+        <button type="submit" class="btn btn-primary">Отправить заявку <span class="arrow">→</span></button>
+        <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности и обработкой персональных данных.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">Наталья <span>Оганезова</span></div>
+        <p>Адвокат. Член Адвокатской палаты Московской области. Реестровый номер 50/6223. Адвокатский статус с 2009 года.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="#about">Обо мне</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#process">Как работаю</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul>
+          <li><a href="tel:+79262722604">+7 926 272-26-04</a></li>
+          <li><a href="mailto:nataliiaoganezova@gmail.com">nataliiaoganezova@gmail.com</a></li>
+          <li><span>Москва</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>© 2026 Адвокат Н.В. Оганезова. Все права защищены.</div>
+      <div><a href="#">Политика конфиденциальности</a> · <a href="#">Согласие на обработку ПДн</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 20);
+});
+
+const burger = document.getElementById('burger');
+const nav = document.getElementById('nav');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('open');
+  nav.classList.toggle('open');
+});
+document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => {
+  burger.classList.remove('open');
+  nav.classList.remove('open');
+}));
+
+document.querySelectorAll('.faq-item').forEach(item => {
+  const q = item.querySelector('.faq-q');
+  const a = item.querySelector('.faq-a');
+  q.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => {
+      i.classList.remove('open');
+      i.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      a.style.maxHeight = a.scrollHeight + 'px';
+    }
+  });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
